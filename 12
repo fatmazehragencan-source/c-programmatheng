@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(void){
+    int a;
+    int b;
+    int c;
+    printf("Enter three sides:");
+    scanf("%d %d %d", &a, &b, &c);
+    if(a==b && a==c){
+        printf("Equilateral triangle.");
+    }
+    else if((a==b && a!=c) || (b==c && c!=a) ||(a==c && a!=b)){
+        printf("Isosceles triangle.");
+    }
+    else{
+        printf("Scalene triangle.");
+    }
+    return 0;
+}
