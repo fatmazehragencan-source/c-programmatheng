@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(void){
+    int x;
+    int y;
+    int z;
+    printf("enter the size of tringle: ");
+    scanf("%d %d %d", &x, &y, &z);
+    if((x+y>z && (x-y<z && y-x<z)) || (x+z>y && (x-z<y && z-x<y)) || (z+y>x && (z-y<x && y-z<x))){
+        if(x==y && y==z){
+            printf("Equilateral Triangle");
+        }
+        else if((x==y && x!=z) || (y==z && y!=x) || (x==z && x!=y)){
+            printf("Isosceles Triangle");
+        }
+        else{
+            printf("Scalene Triangle");
+        }
+    }
+    else{
+        printf("invalid tringle.");
+    }
+    return 0;
+}
