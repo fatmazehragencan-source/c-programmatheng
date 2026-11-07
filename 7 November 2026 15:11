@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    char x;
+    x='a';
+    while(x<='z'){
+        printf("%c\n",x);
+        x++;
+    }
+    return 0;
+    
+}
