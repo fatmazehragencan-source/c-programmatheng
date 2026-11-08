@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int a;
+    int b;
+    b=1;
+    printf("enter a number:");
+    scanf("%d",&a);
+    while(a){
+        if(a/10==0){
+            printf("%d digit ",b);
+            break;
+        }
+        b++;
+        a/=10;
+        
+    }
+    return 0; 
+}
