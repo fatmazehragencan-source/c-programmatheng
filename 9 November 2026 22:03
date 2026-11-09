@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int x;
+    int last;
+    printf("enter a number:");
+    scanf("%d",&x);
+    last=x%10;
+   
+    while(1){
+        if(x/10==0){
+        
+        break;
+        }
+        x/=10;
+        
+    }
+    printf("%d",x+last);
+    return 0;
+}
