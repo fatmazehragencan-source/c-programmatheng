@@ -2,7 +2,6 @@
 int main()
 {
     int x;
-    int b=0;
     printf("enter a number:");
     scanf("%d",&x);
     printf("last digit is %d\n",x%10);
