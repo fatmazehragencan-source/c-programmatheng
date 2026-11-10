@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,k=0,l=0;
+    
+    printf("enter a number:");
+    scanf("%d",&x);
+    
+
+    if(x == 0){
+            a = 1;
+        }     
+    
+    for(;x>0;x/=10){
+                
+        if(x%10==0){
+            a++;
+        }
+        if(x%10==1){
+            b++;
+        }
+        if(x%10==2){
+            c++;
+        }
+        if(x%10==3){
+            d++;
+        }
+        if(x%10==4){
+            e++;
+        }
+        if(x%10==5){
+            f++;
+        }
+        if(x%10==6){
+            g++;
+        }
+        if(x%10==7){
+            h++;
+        }
+        if(x%10==8){
+            k++;
+        }
+        if(x%10==9){
+            l++;
+        }
+        if(x == 0){
+            a = 1;
+        }        
+        
+    }
+    printf("0 digit:%d\n",a);
+    printf("1 digit:%d\n",b);
+    printf("2 digit:%d\n",c);
+    printf("3 digit:%d\n",d);
+    printf("4 digit:%d\n",e);
+    printf("5 digit:%d\n",f);
+    printf("6 digit:%d\n",g);
+    printf("7 digit:%d\n",h);
+    printf("8 digit:%d\n",k);
+    printf("9 digit:%d\n",l);
+
+
+    return 0;
+}
