@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[]={4,65,8,-9,22,3};
+    int n;
+    n=sizeof(array)/sizeof(array[0]);
+    int i,a,b;
+    a=0;
+    b=0;
+
+    for(i=0;i<n;i++){
+        if(array[i]%2==0){
+            a++;
+        }
+        else{
+            b++;
+        }
+    }
+    printf("%d even number.\n",a);
+    printf("%d odd number.",b);
+
+    return 0;
+}
