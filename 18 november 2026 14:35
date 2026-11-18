@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[7]={4,65,8,-9,22,3};
+    int n=6;
+    int k;
+    int i=5;
+    int a=i+1;
+    
+    for(i=5;i>=2;i--){
+        array[a]=array[i];
+        a--;
+        
+    }
+    array[2]=100;
+    
+    for(k=0;k<7;k++){
+    printf("%d\n",array[k]);
+    }
+
+    return 0;
+}
